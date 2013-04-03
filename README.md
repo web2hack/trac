@@ -1,6 +1,16 @@
 ﻿《Web前端黑客技术揭秘》勘误表，持续更新，谢谢反馈……
 
+2013/3/8
+----------------------------------------------
+p182的&lt;a href=&quot;#&quot; onclick=&quot;do_some_func(\&quot;&lt;?=$_GET['a']?&gt;\&quot;)&quot;&gt;test&lt;/a&gt;改为：
+&lt;a href=&quot;#&quot; onclick=&quot;do_some_func('&lt;?=$_GET['a']?&gt;')&quot;&gt;test&lt;/a&gt;
+p183第三行的"do_some_func(",alert(1),")"改为"do_some_func('',alert(1),'')"
 
+修改原因：单引号双引号弄混淆了，我眼花了。
+
+还得注意：测试时关闭PHP的magic_quotes_gpc（设置php.ini的magic_quotes_gpc = Off）。
+
+反馈者：忘记了……
 
 2013/3/5
 ----------------------------------------------
@@ -17,7 +27,8 @@ p29的“默认情况下，这样的跨域无法带上目标域的会话（Cooki
 <pre>
 p342，下面这句话引起了争议：
 
-还有一种糟糕的子域设计是新浪微博，主内容都在顶级域下（weibo.com），大量的子域提供不同的业务，任何一个子域有XSS，都可以轻易跨到顶级域下。
+还有一种糟糕的子域设计是新浪微博，主内容都在顶级域下（weibo.com），大量的子域提供不同的业务，
+任何一个子域有XSS，都可以轻易跨到顶级域下。
 
 解决请看：http://evilcos.me/?p=251
 
@@ -37,7 +48,8 @@ p32的var src = http://www.evil.com/steal.php;改为var src = "http://www.evil.c
 
 p130的1" onmouserover=alert(1) type="text改为1" onmouseover=alert(1) type="text
 
-p130的&lt;input value=&quot;1&quot;onmouserover=alert(1) type=&quot;text&quot; type=&quot;hidden&quot; /&gt;改为&lt;input value=&quot;1&quot; onmouseover=alert(1) type=&quot;text&quot; type=&quot;hidden&quot; /&gt;
+p130的&lt;input value=&quot;1&quot;onmouserover=alert(1) type=&quot;text&quot; type=&quot;hidden&quot; /&gt;改为：
+&lt;input value=&quot;1&quot; onmouseover=alert(1) type=&quot;text&quot; type=&quot;hidden&quot; /&gt;
 
 p73的熏染改为渲染
 
