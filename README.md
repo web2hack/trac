@@ -2,6 +2,7 @@
 
 2013/3/8
 ----------------------------------------------
+<pre>
 p182的&lt;a href=&quot;#&quot; onclick=&quot;do_some_func(\&quot;&lt;?=$_GET['a']?&gt;\&quot;)&quot;&gt;test&lt;/a&gt;改为：
 &lt;a href=&quot;#&quot; onclick=&quot;do_some_func('&lt;?=$_GET['a']?&gt;')&quot;&gt;test&lt;/a&gt;
 p183第三行的"do_some_func(",alert(1),")"改为"do_some_func('',alert(1),'')"
@@ -11,6 +12,7 @@ p183第三行的"do_some_func(",alert(1),")"改为"do_some_func('',alert(1),'')"
 还得注意：测试时关闭PHP的magic_quotes_gpc（设置php.ini的magic_quotes_gpc = Off）。
 
 反馈者：忘记了……
+</pre>
 
 2013/3/5
 ----------------------------------------------
