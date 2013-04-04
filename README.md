@@ -11,7 +11,7 @@ p183第三行的"do_some_func(",alert(1),")"改为"do_some_func('',alert(1),'')"
 
 还得注意：测试时关闭PHP的magic_quotes_gpc（设置php.ini的magic_quotes_gpc = Off）。
 
-反馈者：忘记了……
+感谢：@muhuohacker反馈
 </pre>
 
 2013/3/5
