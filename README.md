@@ -1,5 +1,19 @@
 ﻿《Web前端黑客技术揭秘》勘误表，持续更新，谢谢反馈……
 
+2013/4/17
+----------------------------------------------
+<pre>
+p60页下面这段：
+1）allowNetworking
+该参数控制Flash文件的网络访问功能，它有三个值：all（所有的网络API都可用）、internal（默认值，除了不能使用浏览器导航和浏览器交互的API外，如navigate ToURL、fscommand、ExternalInterface.call等，其他的都可用）、none（所有的网络API都不可用）。
+
+有个错误，allowNetworking的默认值应该是all，而不是internal。
+
+这个错误不影响本书的一些结论。
+
+感谢：TSRC的mulu反馈
+</pre>
+
 2013/3/8
 ----------------------------------------------
 <pre>
