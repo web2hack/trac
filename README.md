@@ -4,6 +4,16 @@
 ----------------------------------------------
 以下bugs都将在“2013年10月”台湾上市的《Web 2.0 駭客技術揭秘》中解决，感谢小伙伴们:)
 
+2013/6/25
+----------------------------------------------
+<pre>
+p183第七行：
+&lt;a href=&quot;#&quot; onclick=&quot;do_some_func('',function(){alert(1);alert(2);},'')&quot;&gt;test&lt;/a&gt;
+应该改为：
+&lt;a href=&quot;#&quot; onclick=&quot;do_some_func('',function(){alert(1);alert(2);}(),'')&quot;&gt;test&lt;/a&gt;
+
+感谢：Ay暗影的一而再的耐心反馈
+</pre>
 
 2013/6/7
 ----------------------------------------------
